@@ -1,0 +1,61 @@
+
+
+<html>
+
+<body>
+
+     <input id="num1" type="number" placeholder="Enter the number 1">
+     <input id="num2" type="number" placeholder="Enter the number 2">
+     <br> <br>
+
+     <button onclick="add()"> ADD </button>
+     <button onclick="sub()"> SUB </button>
+     <button onclick="multi()"> MULTI </button>
+     <button onclick="div()"> DIV </button>
+
+     <p id="result" style="font-size: 20px; color:black; margin-top: 20px;"> </p>
+
+     <script>
+          function add() {
+               // Get values from input fields & convert to number
+               let a = Number(document.getElementById("num1").value);
+               let b = Number(document.getElementById("num2").value);
+
+               // Display result
+               document.getElementById("result").innerText = "Result:" + (a + b);
+
+          }
+
+          function sub() {
+               // Get values from input fields & convert to number
+               let a = Number(document.getElementById("num1").value);
+               let b = Number(document.getElementById("num2").value);
+
+               // Display result
+               document.getElementById("result").innerText = "Result:" + (a - b);
+
+          }
+
+          function multi() {
+               // Get values from input fields & convert to number
+               let a = Number(document.getElementById("num1").value);
+               let b = Number(document.getElementById("num2").value);
+
+               // Display result
+               document.getElementById("result").innerText = "Result:" + (a * b);
+
+          }
+
+          function div() {
+               // Get values from input fields & convert to number
+               let a = Number(document.getElementById("num1").value);
+               let b = Number(document.getElementById("num2").value);
+
+               // Display result
+               document.getElementById("result").innerText = "Result:" + (a / b);
+
+          }
+     </script>
+</body>
+
+</html>
